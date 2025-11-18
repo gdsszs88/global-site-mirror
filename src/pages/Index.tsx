@@ -23,13 +23,22 @@ const Index = () => {
       <Hero />
       
       {/* Products Section */}
-      <section id="products" className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+      <section id="products" className="relative py-20 md:py-32">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 bg-gradient-overlay opacity-30"></div>
+        
+        <div className="container relative mx-auto px-4">
+          <div className="mb-16 text-center">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2">
+              <span className="text-sm font-semibold text-primary">{t('featured')}</span>
+            </div>
+            <h2 className="mb-6 text-4xl font-extrabold tracking-tight text-foreground md:text-5xl lg:text-6xl">
               {t('our_products')}
             </h2>
-            <div className="mx-auto h-1 w-20 rounded-full bg-gradient-to-r from-primary to-accent"></div>
+            <p className="mx-auto max-w-2xl text-lg text-muted-foreground md:text-xl">
+              {t('products_subtitle')}
+            </p>
+            <div className="mx-auto mt-6 h-1.5 w-24 rounded-full bg-gradient-primary shadow-glow"></div>
           </div>
           
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -46,9 +55,17 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t bg-muted/50 py-8">
-        <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© 2024 ProductHub. All rights reserved.</p>
+      <footer className="relative border-t bg-gradient-to-br from-muted/30 to-muted/50 py-12">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col items-center justify-center gap-4 text-center">
+            <div className="flex items-center gap-2">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-primary shadow-glow">
+                <span className="text-xl font-bold text-white">P</span>
+              </div>
+              <span className="text-xl font-bold text-foreground">ProductHub</span>
+            </div>
+            <p className="text-sm text-muted-foreground">© 2024 ProductHub. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>
