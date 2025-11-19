@@ -96,29 +96,14 @@ export const Header = () => {
         <div className="border-t bg-background md:hidden">
           <nav className="container mx-auto flex flex-col gap-4 p-4">
             {menuItems.map((item) => (
-              <div key={item.key}>
-                <a
-                  href={item.href}
-                  className="block text-sm font-medium text-muted-foreground hover:text-foreground"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {t(item.key)}
-                </a>
-                {item.hasSubmenu && (
-                  <div className="ml-4 mt-2 flex flex-col gap-2">
-                    {item.submenu?.map((subItem) => (
-                      <a
-                        key={subItem.key}
-                        href={subItem.href}
-                        className="text-sm text-muted-foreground hover:text-foreground"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {t(subItem.key)}
-                      </a>
-                    ))}
-                  </div>
-                )}
-              </div>
+              <a
+                key={item.key}
+                href={item.href}
+                className="block text-sm font-medium text-muted-foreground hover:text-foreground"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t(item.key)}
+              </a>
             ))}
           </nav>
         </div>
