@@ -16,20 +16,12 @@ export const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
   const menuItems = [
-    { key: 'home', href: '#home', hasSubmenu: false },
-    {
-      key: 'products',
-      href: '#products',
-      hasSubmenu: true,
-      submenu: [
-        { key: 'category_hardware', href: '#hardware' },
-        { key: 'category_software', href: '#software' },
-        { key: 'category_service', href: '#service' },
-      ],
-    },
-    { key: 'solutions', href: '#solutions', hasSubmenu: false },
-    { key: 'about', href: '#about', hasSubmenu: false },
-    { key: 'contact', href: '#contact', hasSubmenu: false },
+    { key: 'home', href: '/', hasSubmenu: false },
+    { key: 'alicloud', href: '/alicloud', hasSubmenu: false },
+    { key: 'aws', href: '/aws', hasSubmenu: false },
+    { key: 'aws_ec2', href: '/aws-ec2', hasSubmenu: false },
+    { key: 'migration', href: '/migration', hasSubmenu: false },
+    { key: 'partner', href: '/partner', hasSubmenu: false },
   ];
 
   return (
@@ -45,31 +37,15 @@ export const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-6 md:flex">
-          {menuItems.map((item) =>
-            item.hasSubmenu ? (
-              <DropdownMenu key={item.key}>
-                <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
-                  {t(item.key)}
-                  <ChevronDown className="h-4 w-4" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  {item.submenu?.map((subItem) => (
-                    <DropdownMenuItem key={subItem.key}>
-                      <a href={subItem.href}>{t(subItem.key)}</a>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-            ) : (
-              <a
-                key={item.key}
-                href={item.href}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-              >
-                {t(item.key)}
-              </a>
-            )
-          )}
+          {menuItems.map((item) => (
+            <a
+              key={item.key}
+              href={item.href}
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            >
+              {t(item.key)}
+            </a>
+          ))}
         </nav>
 
         {/* Right Side Actions */}
