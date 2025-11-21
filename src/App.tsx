@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ThemeProvider } from "@/contexts/ThemeContext";
+import { FloatingContact } from "@/components/FloatingContact";
 import Index from "./pages/Index";
 import AliCloud from "./pages/AliCloud";
 import AWS from "./pages/AWS";
@@ -22,6 +23,7 @@ const App = () => (
         <TooltipProvider>
           <Toaster />
           <Sonner />
+          <FloatingContact />
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Index />} />
