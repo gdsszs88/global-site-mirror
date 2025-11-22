@@ -31,10 +31,18 @@ const Index = () => {
             </div>
 
             <div className="flex flex-col gap-4 sm:flex-row mb-12">
-              <Button size="lg" className="h-14 px-8 text-lg bg-[#0088cc] hover:bg-[#0088cc]/90 text-white">
+              <Button 
+                size="lg" 
+                className="h-14 px-8 text-lg bg-[#0088cc] hover:bg-[#0088cc]/90 text-white"
+                onClick={() => window.open('https://t.me/gaoshengsm', '_blank')}
+              >
                 Telegram{t('contact')}
               </Button>
-              <Button size="lg" className="h-14 px-8 text-lg bg-[#25D366] hover:bg-[#25D366]/90 text-white">
+              <Button 
+                size="lg" 
+                className="h-14 px-8 text-lg bg-[#25D366] hover:bg-[#25D366]/90 text-white"
+                onClick={() => window.open('https://t.me/gaoshengsm', '_blank')}
+              >
                 WhatsApp{t('contact')}
               </Button>
             </div>
@@ -120,7 +128,13 @@ const Index = () => {
                 <product.icon className="h-12 w-12 text-primary mb-4" />
                 <h3 className="text-xl font-bold mb-2">{product.title}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{product.desc}</p>
-                <Button variant="outline" size="sm">{t('buy_now')}</Button>
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  onClick={() => window.open('https://t.me/gaoshengsm', '_blank')}
+                >
+                  {t('buy_now')}
+                </Button>
               </Card>
             ))}
           </div>
@@ -133,7 +147,9 @@ const Index = () => {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-4 mb-4">
               <h2 className="text-4xl font-bold">{t('purchase_process_title')}</h2>
-              <Button>{t('consult_now')}</Button>
+              <Button onClick={() => window.open('https://t.me/gaoshengsm', '_blank')}>
+                {t('consult_now')}
+              </Button>
             </div>
             <p className="text-muted-foreground">PURCHASE PROCESS</p>
           </div>
@@ -195,7 +211,10 @@ const Index = () => {
               <Card key={index} className="p-8 hover:shadow-lg transition-shadow">
                 <h3 className="text-2xl font-bold mb-4">{solution.title}</h3>
                 <p className="text-muted-foreground mb-4">{solution.desc}</p>
-                <Button variant="outline">
+                <Button 
+                  variant="outline"
+                  onClick={() => window.open('https://t.me/gaoshengsm', '_blank')}
+                >
                   {t('learn_more')}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
