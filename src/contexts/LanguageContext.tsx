@@ -21,7 +21,7 @@ const translations = {
     home_hero_subtitle_1: '无需信用卡、免备案、隐私安全',
     home_hero_subtitle_2: '即充即用、长期稳定、高效无忧',
     home_hero_subtitle_3: '365*24H技术支持，全渠道支付',
-    contact: '联系',
+    contact: '！',
     huawei_cloud: '华为云',
     tencent_cloud: '腾讯云',
     feature_discount_title: '优惠折扣',

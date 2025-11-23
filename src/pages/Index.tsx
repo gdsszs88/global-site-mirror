@@ -41,9 +41,9 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="h-14 px-8 text-lg bg-[#25D366] hover:bg-[#25D366]/90 text-white"
-                onClick={() => window.open('https://t.me/gaoshengsm', '_blank')}
+                onClick={() => window.open('https://sc.server520.top', '_blank')}
               >
-                WhatsApp{t('contact')}
+                自助购买{t('contact')}
               </Button>
             </div>
 

@@ -123,7 +123,7 @@ const AliCloud = () => {
                 Telegram联系
               </Button>
               <Button size="lg" variant="outline" onClick={() => window.open(telegramLink, '_blank')}>
-                WhatsApp联系
+                自助购买
               </Button>
             </div>
           </div>
@@ -175,7 +175,7 @@ const AliCloud = () => {
             <p className="text-xl text-muted-foreground mb-6">更多地区云服务器请点击下面在线咨询</p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button onClick={() => window.open(telegramLink, '_blank')}>Telegram联系</Button>
-              <Button variant="outline" onClick={() => window.open(telegramLink, '_blank')}>WhatsApp联系</Button>
+              <Button variant="outline" onClick={() => window.open(telegramLink, '_blank')}>自助购买</Button>
             </div>
           </div>
 

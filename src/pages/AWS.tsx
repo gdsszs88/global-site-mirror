@@ -95,7 +95,7 @@ const AWS = () => {
                 Telegram联系
               </Button>
               <Button size="lg" variant="outline" onClick={() => window.open(telegramLink, '_blank')}>
-                WhatsApp联系
+                自助购买
               </Button>
             </div>
           </div>

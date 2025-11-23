@@ -17,7 +17,7 @@ export const FloatingContact = () => {
         <Button
           size="lg"
           className="rounded-full w-14 h-14 shadow-glow hover:scale-110 transition-transform bg-accent hover:bg-accent/90"
-          onClick={() => window.open('https://t.me/gaoshengsm', '_blank')}
+          onClick={() => window.open('https://sc.server520.top', '_blank')}
           aria-label="自助购买"
         >
           <ShoppingCart className="h-6 w-6" />
