@@ -36,7 +36,7 @@ const Index = () => {
                 className="h-14 px-8 text-lg bg-[#0088cc] hover:bg-[#0088cc]/90 text-white"
                 onClick={() => window.open('https://t.me/gaoshengsm', '_blank')}
               >
-                Telegram{t('contact')}
+                Telegram联系{t('contact')}
               </Button>
               <Button 
                 size="lg" 
