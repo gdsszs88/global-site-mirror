@@ -22,6 +22,7 @@ export const Header = () => {
     { key: 'aws_ec2', href: '/aws-ec2', hasSubmenu: false },
     { key: 'migration', href: '/migration', hasSubmenu: false },
     { key: 'partner', href: '/partner', hasSubmenu: false },
+    { key: 'tutorials', href: '/tutorials', hasSubmenu: false },
   ];
 
   return (
