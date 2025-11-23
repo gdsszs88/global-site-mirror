@@ -12,6 +12,7 @@ import AWS from "./pages/AWS";
 import AWSEC2 from "./pages/AWSEC2";
 import Migration from "./pages/Migration";
 import Partner from "./pages/Partner";
+import Tutorials from "./pages/Tutorials";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="/aws-ec2" element={<AWSEC2 />} />
               <Route path="/migration" element={<Migration />} />
               <Route path="/partner" element={<Partner />} />
+              <Route path="/tutorials" element={<Tutorials />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
